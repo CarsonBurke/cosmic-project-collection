@@ -80,8 +80,8 @@ fn write_applications(html: &mut String, applications: Applications) {
             </div>
             "#,
             match project.image {
-                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-cover rounded-lg mb-4">
-                    <img src="{}" alt="{}" class="w-full h-50 object-cover rounded-lg mb-4"/>
+                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-contain rounded-lg mb-4">
+                    <img src="{}" alt="{}" class="w-full h-50 object-contain rounded-lg mb-4"/>
                 </a>"#, img, img, project.name),
                 None => "".to_string(),
             },
@@ -111,8 +111,8 @@ fn write_applets(html: &mut String, applets: Applets) {
             </div>
             "#,
             match project.image {
-                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-cover rounded-lg mb-4">
-                    <img src="{}" alt="{}" class="w-full h-50 object-cover rounded-lg mb-4"/>
+                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-contain rounded-lg mb-4">
+                    <img src="{}" alt="{}" class="w-full h-50 object-contain rounded-lg mb-4"/>
                 </a>"#, img, img, project.name),
                 None => "".to_string(),
             },
@@ -142,8 +142,8 @@ fn write_themes(html: &mut String, themes: Themes) {
             </div>
             "#,
             match project.image {
-                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-cover rounded-lg mb-4">
-                    <img src="{}" alt="{}" class="w-full h-50 object-cover rounded-lg mb-4"/>
+                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-contain rounded-lg mb-4">
+                    <img src="{}" alt="{}" class="w-full h-50 object-contain rounded-lg mb-4"/>
                 </a>"#, img, img, project.name),
                 None => "".to_string(),
             },
@@ -173,7 +173,7 @@ fn write_services(html: &mut String, services: Services) {
             </div>
             "#,
             match project.image {
-                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-cover rounded-lg mb-4">
+                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-contain rounded-lg mb-4">
                     <img src="{}" alt="{}" />
                 </a>"#, img, img, project.name),
                 None => "".to_string(),
@@ -204,8 +204,8 @@ fn write_scripts(html: &mut String, scripts: Scripts) {
             </div>
             "#,
             match project.image {
-                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-cover rounded-lg mb-4">
-                    <img src="{}" alt="{}" class="w-full h-50 object-cover rounded-lg mb-4"/>
+                Some(img) => format!(r#"<a href="{}" class="w-full h-50 object-contain rounded-lg mb-4">
+                    <img src="{}" alt="{}" class="w-full h-50 object-contain rounded-lg mb-4"/>
                 </a>"#, img, img, project.name),
                 None => "".to_string(),
             },
